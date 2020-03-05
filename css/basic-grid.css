@@ -38,6 +38,7 @@ h1 a:hover {
   border-bottom: 0;
   padding-bottom: .3em;
   text-decoration: none;
+  color: #fff;
 }
 
 h2 {
@@ -128,7 +129,29 @@ a:hover {
 }
 
 .scaled {
-  width:52%;
+  width:50%;
+}
+
+.fa {
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 2px;
+}
+
+.fa-facebook {
+  background: rgb(255, 255, 255, 0);
+  color: white;
+}
+
+.fa-instagram {
+  background: rgb(255, 255, 255, 0);
+  color: white;
+}
+
+.fa-twitter {
+  background: rgb(255, 255, 255, 0);
+  color: white;
 }
 
 section:not(:target):not(#home),
