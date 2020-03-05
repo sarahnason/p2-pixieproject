@@ -9,12 +9,17 @@
 }
 
 body {
+  cursor: url(cursor.cur), default;
   margin: 0px;
   background-color: #f7a69b;
   font-family: Apercu;
   color: #e5352c;
   font-size: 14px;
   line-height: 1.5em;
+}
+
+body a:hover {
+  cursor: url(cursor.cur), default;
 }
 
 h1 {
