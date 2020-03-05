@@ -1,0 +1,127 @@
+body {
+  cursor: url('cursor_1.png'), default; 
+  font-family: Apercu;
+  color: #e5352c;
+  font-size: 14px;
+  line-height: 1.5em;
+  margin: 0px;
+}
+
+ @font-face {
+    font-family: 'Apercu';
+    src: url('apercu.otf');
+}
+
+ @font-face {
+    font-family: 'Ribes';
+    src: url('Ribes-Black.woff');
+}
+
+.item1 { 
+  background-color: #e5352c;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { 
+  display: grid;
+  grid-template-columns: auto;
+  grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto; }
+.content {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.scaled {
+width:50%;
+}
+
+#home {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#about {
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#leftside {
+padding:25px;
+}
+
+#rightside {
+padding:25px;
+}
+
+section:not(:target):not(#home),
+section:target ~ #home {
+  display: none
+}
+
+section {
+
+}
+
+h1 {
+  font-family: Ribes;
+  font-size: 62px;
+  line-height: 1em;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  color: #f7a69b;
+  text-decoration: none;
+  margin: 0px;
+  padding:0px;
+}
+
+a:hover {
+  color: #ffd15e;
+}
+
+.grid-container {
+  display: grid;
+  height: 100vh;
+  margin: 0px;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main main main main'
+    'main main main main main main'
+    'main main main main main main'
+    'main main main main main main'
+    'main main main main main main'
+    'main main main main main main'
+    'main main main main main main'
+    'main main main main main main'
+    'main main main main main main'
+    'main main main main main main'
+    'footer footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #f7a69b;
+  padding: 0px;
+}
+
+.grid-container > div {
+  padding: 20px;
+  font-size: 14px;
+}

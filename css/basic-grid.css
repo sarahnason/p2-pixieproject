@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'Apercu';
+  src: url('apercu.otf');
+}
+
+@font-face {
+  font-family: 'Ribes';
+  src: url('Ribes-Black.woff');
+}
+
+body {
+  margin: 0px;
+  background-color: #f7a69b;
+  font-family: Apercu;
+  color: #e5352c;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-family: Ribes;
+  font-size: 62px;
+  line-height: 1em;
+  padding: 0px;
+  margin: 0px;
+}
+
+h2 {
+  font-family: Ribes;
+  font-size: 92px;
+  line-height: 1em;
+  padding: 0px;
+  margin: 0px;
+}
+
+h3 {
+  font-family: Ribes;
+  font-size: 20px;
+  padding: 0px;
+  margin: 0px;
+}
+
+p {
+  font-family: Apercu;
+  color: #fff;
+  font-size: 14px;
+}
+
+mark {
+  background-color: #fff;
+  color:#f7a69b;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color:#fff;
+}
+
+a:hover {
+  color:#f7a69b;
+}
+
+#outer-grid {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 4.5fr 0.5fr;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+  grid-auto-flow: column;
+}
+#outer-grid > div {
+  background-color: #f7a69b;
+  color: white;
+  padding: 0px;
+}
+#inner-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+}
+#inner-grid > div {
+  background: salmon;
+  padding: 10px;
+}
+#adopt, 
+#contact, 
+#about, 
+#volunteer {
+  display: grid;
+  grid-template-columns: 4fr 10fr;
+  grid-gap: 15px;
+}
+#home {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+#adopt > div, 
+#contact > div, 
+#about > div, 
+#volunteer > div, 
+#home > div {
+  background: #f7a69b;
+  padding: 40px;
+}
+#nav {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0px;
+}
+#nav > div {
+  background: salmon;
+  padding: 25px;
+}
+
+.scaled {
+  width:52%;
+}
+
+section:not(:target):not(#home),
+section:target ~ #home {
+    display: none
+}
