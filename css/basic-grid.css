@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Apercu';
-  src: url('apercu.otf');
+  src: url('../apercu.otf');
 }
 
 @font-face {
   font-family: 'Ribes';
-  src: url('Ribes-Black.woff');
+  src: url('../Ribes-Black.woff');
 }
 
 body {
