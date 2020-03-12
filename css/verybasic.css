@@ -21,6 +21,7 @@ body {
   color: white;
   font-family: Apercu;
   font-size: 15px;
+  cursor: url(../cursor.cur), auto;
 }
 
 /*** Color Variables ***/
@@ -49,6 +50,7 @@ h1 {
 a {
   text-decoration: none;
   color: white;
+  cursor: url(../cursor.cur), auto;
 }
 
 a:visited {
