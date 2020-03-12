@@ -157,7 +157,7 @@ a:hover {
 #menu-toggle {
   width: 55px;
   height: 55px;
-  background: #2ea8ee;
+  background: #e5352c;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
@@ -288,7 +288,7 @@ div {
     display: inline-block;
     width: 100vw;
     height: 0;
-    background: #79edfc;
+    background: salmon;
     position: absolute;
     top: 160px;
     -webkit-transform: translate(, );
